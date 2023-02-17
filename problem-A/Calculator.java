@@ -25,7 +25,7 @@ public class Calculator {
     }
 
     public int Add() {
-        return numberA + numberB
+        return numberA + numberB;
     }
 
     public int Subtract() {

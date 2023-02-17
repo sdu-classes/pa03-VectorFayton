@@ -2,7 +2,7 @@ public class Calculator {
     private int numberA;
     private int numberB;
 
-    public void Calculator(int a, int b)
+    public Calculator(int a, int b)
     {
         numberA = a;
         numberB = b;

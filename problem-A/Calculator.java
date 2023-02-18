@@ -1,12 +1,17 @@
 package Problem_A;
 
+import java.io.IOException;
+
 public class Calculator {
     int Number_A;
     int Number_B;
 
-    public Calculator(int a, int b){
+    public Calculator(int a, int b) {
         this.Number_A = a;
         this.Number_B = b;
+    }
+    public Calculator(Object a, Object b) throws ArithmeticException {
+        throw new ArithmeticException("Write numbers in integer format.");
     }
 
     public int getNumber_A() {

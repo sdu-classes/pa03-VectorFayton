@@ -1,46 +1,55 @@
-package src;
+package Problem_A;
 
 public class Calculator {
-    private int numberA;
-    private int numberB;
+    int Number_A;
+    int Number_B;
 
-    public Calculator(int a, int b)
-    {
-        numberA = a;
-        numberB = b;
+    public Calculator(int a, int b){
+        this.Number_A = a;
+        this.Number_B = b;
     }
 
-    public int getNumberA() {
-        return numberA;
+    public int getNumber_A() {
+        return Number_A;
     }
 
-    public int getNumberB() {
-        return numberB;
+    public int getNumber_B() {
+        return Number_B;
     }
 
-    public void setNumberA(int numberA) {
-        this.numberA = numberA;
+    public void setNumber_A(int number_A) {
+        Number_A = number_A;
     }
 
-    public void setNumberB(int numberB) {
-        this.numberB = numberB;
+    public void setNumber_B(int number_B) {
+        Number_B = number_B;
     }
 
-    public int Add() {
-        return numberA + numberB;
+    public int Add() throws ArithmeticException {
+        if (Number_A < 0 || Number_B < 0)
+            throw new ArithmeticException("Please use positive numbers.");
+        else
+            return Number_A + Number_B;
     }
 
-    public int Subtract() {
-        return numberA - numberB;
+    public int Subtract() throws ArithmeticException{
+        if (Number_A < 0 || Number_B < 0)
+            throw new ArithmeticException("Please use positive numbers");
+        else
+            return Number_A - Number_B;
     }
 
-    public int Multiplication() {
-        return numberA * numberB;
+    public int Multiply() throws ArithmeticException{
+        if (Number_A < 0 || Number_B < 0)
+            throw new ArithmeticException("one of numbers is zero");
+        else
+            return Number_A * Number_B;
     }
 
-    public int Division(){
-        return numberA / numberB;
+    public int Division() throws ArithmeticException{
+        if (Number_A < 0 || Number_B < 0)
+            throw new ArithmeticException("one of numbers is zero");
+        else
+            return Number_A / Number_B;
     }
-
-
 }

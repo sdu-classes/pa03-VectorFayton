@@ -1,6 +1,3 @@
-package Problem_B;
-//        String plafornIndependent = "test-dir" + File.separator + "Text.txt"; // best solution
-//        String filePath = "D:\\Файлопомойка\\Работа\\ActivityToLesson\\Practices Activties 3\\src\\Problem_B\\Text";
 import java.util.*;
 import java.io.*;
 
